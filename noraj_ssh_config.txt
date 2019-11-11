@@ -1,0 +1,3 @@
+Host wiki.rtfm.re
+  HostName wiki.rtfm.re
+  User noraj

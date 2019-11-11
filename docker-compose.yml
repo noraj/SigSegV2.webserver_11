@@ -1,0 +1,30 @@
+# Author: noraj
+version: '3'
+services:
+  webserver11:
+    build: .
+    image: webserver11
+    user: noraj
+    container_name: webserver11
+    ports:
+      - "42422:9999" # port externe / port du docker
+    networks:
+      - webserver11
+    restart: always
+  webserver11_hiddenservice:
+    build: hidden_service
+    image: webserver11_hiddenservice
+    user: noraj
+    container_name: webserver11_hiddenservice
+    networks:
+      webserver11: # communicate with the front-facing server
+        aliases:
+          - hiddenservice
+    restart: always
+
+networks:
+  webserver11:
+    driver: bridge
+    driver_opts:
+      com.docker.network.bridge.enable_ip_masquerade: "false" # le container n'aura pas acces a internet
+      com.docker.network.bridge.name: "webserver_11" # nom du repo
