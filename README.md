@@ -1,4 +1,4 @@
-# XXE OOB via SVG + SSRF + SSRF bypass
+# XXE OOB via SVG + SSRF network scan + SSRF localhost bypass
 
 ## Version
 
