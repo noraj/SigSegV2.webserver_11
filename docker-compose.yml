@@ -26,5 +26,5 @@ networks:
   webserver11:
     driver: bridge
     driver_opts:
-      com.docker.network.bridge.enable_ip_masquerade: "false" # le container n'aura pas acces a internet
+      com.docker.network.bridge.enable_ip_masquerade: "true" # le container n'aura pas acces a internet
       com.docker.network.bridge.name: "webserver_11" # nom du repo
