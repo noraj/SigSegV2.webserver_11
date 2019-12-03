@@ -84,3 +84,9 @@ time the flag is not easily hidden in `/etc/passwd` but on a remote service.
 ## Flag
 
 `sigsegv{so_y0u_ar3_r3a11y_s3eri0us_4bout_XXE_4nd_SSRF}`
+
+## SigSegV2
+
+A web challenge that was available during SigSegV2 CTF (2019).
+
+1 teams on 36 flaged this challenge.
