@@ -81,6 +81,8 @@ time the flag is not easily hidden in `/etc/passwd` but on a remote service.
     php://filter/convert.base64-encode/resource=http://hiddenservice:9999/?url=http://127.0.0.1:10000%23@google.com:80/
     ```
 
+See the fuzzer PoC I created to find this SSRF bypass: https://gitlab.com/snippets/1911694
+
 ## Flag
 
 `sigsegv{so_y0u_ar3_r3a11y_s3eri0us_4bout_XXE_4nd_SSRF}`
